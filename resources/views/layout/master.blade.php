@@ -25,7 +25,7 @@ https://templatemo.com/tm-553-xtra-blog
                 <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
                 <h1 class="text-center">Xtra Blog</h1>
             </div>
-            @include("layouts.sidebar");
+            @include("layout.sidebar");
             <div class="tm-mb-65">
                 <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
                     <i class="fab fa-facebook tm-social-icon"></i>
@@ -46,4 +46,4 @@ https://templatemo.com/tm-553-xtra-blog
         </div>
     </header>
     @yield('content')
-    @include('layouts.footer')
+    @include('layout.footer')

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\About;
 
 use Illuminate\Http\Request;
 
@@ -20,8 +21,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('about', [
-            'title' => 'About',
-        ]);
+        $data = About::where('id',1)->first();
+        return view('about',['title' => 'About'], compact('data'));
     }
 }

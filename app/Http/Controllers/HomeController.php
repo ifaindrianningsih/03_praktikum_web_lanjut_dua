@@ -23,9 +23,9 @@ class HomeController extends Controller
     public function index()
     {
         $data=Blog::limit(6)->get();
-        $arr = json_decode(json_encode($data), true);
+        //$arr = json_decode(json_encode($data), true);
         $kategori = Kategori::all();
-        $arr1 = json_decode(json_encode($kategori), true);
-        return view('home', ['title' => 'Home'],compact('arr','arr1'));
+        //$arr1 = json_decode(json_encode($kategori), true);
+        return view('home', ['title' => 'Home'],compact('data','kategori'));
     }
 }

@@ -21,28 +21,29 @@
                     <hr class="tm-hr-primary tm-mb-55">
                 </div>
             </div>           
-                @foreach($data as $i => $d)
+                @for($i = 0; $i<count($arr); $i++)
                 <article class="col-12">
                     <div class="form-group row text-left">
                         <div class="col-12">
-                            <button class="tm-btn tm-btn-primary tm-btn-small">{{$d->topik}}</button>                        
+                            <button class="tm-btn tm-btn-primary tm-btn-small">{{$arr[$i]['topik']}}</button>                        
                         </div>                            
                     </div> 
                     <div class="row tm-row tm-mb-40">
                         <div class="col-12">                    
                             <div class="mb-4">
-                                <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">{{$d->judul}}</h2>
-                                {{$d->isi}}                           
+                                <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">{{$arr[$i]['judul']}}</h2>
+                                {{$arr[$i]['isi']}}                           
                             </div>                    
                         </div>
                     </div>
                     <div class="d-flex justify-content-between tm-pt-15">
-                        <span class="tm-color-primary">{{$d->tanggal}}</span>
+                        <span class="tm-color-primary">{{$arr1[$i]['nama']}}</span>
+                        <span class="tm-color-primary">{{$arr[$i]['tanggal']}}</span>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <span>{{$i}}</span>
-                        <span>{{$d->pembuat}}</span>
+                        <span>{{$arr[$i]['pembuat']}}</span>
                     </div>
                     <div class="row tm-row tm-mb-45">
                         <div class="col-12">
@@ -50,5 +51,5 @@
                         </div>
                     </div>
                 </article>
-                @endforeach     
+                @endfor     
 @endsection

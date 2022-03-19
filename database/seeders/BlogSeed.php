@@ -18,7 +18,7 @@ class BlogSeed extends Seeder
             [
             'topik'=>'PEMROGRAMAN',
             'judul'=>'Pemrograman Web Lanjut',
-            'isi'=>'Melatih kemampuan ngoding',
+            'isi'=>'Melatih kemampuan ngoding abcdef',
             'tanggal'=>'2022-03-08',
             'pembuat'=>'Ifa dan Irma'
             ]
